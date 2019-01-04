@@ -11,7 +11,7 @@ const cache = new InMemoryCache();
 const defaults = {};
 
 const httpLink = createHttpLink({
-  uri: API_BASE_URL
+  uri: API_BASE_URL,
 });
 
 const authLink = setContext((_, { headers }) => {
@@ -20,7 +20,7 @@ const authLink = setContext((_, { headers }) => {
     headers: {
       ...headers,
       authorization: token ? `Bearer ${token}` : '',
-    }
+    },
   };
 });
 
@@ -28,7 +28,7 @@ const stateLink = withClientState({ cache, defaults });
 
 const client = new ApolloClient({
   link: ApolloLink.from([stateLink, authLink.concat(httpLink)]),
-  cache
+  cache,
 });
 
 export default client;

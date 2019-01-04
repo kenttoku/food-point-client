@@ -10,6 +10,8 @@
     "apollo-link-error": "^1.1.5",
     "apollo-link-http": "^1.5.9",
     "apollo-link-state": "^0.4.2",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
     "graphql": "^14.0.2",
     "react": "^16.7.0",
     "react-apollo": "^2.3.3",
@@ -30,8 +32,6 @@
   ],
   "devDependencies": {
     "babel-eslint": "^9.0.0",
-    "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.7.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-react-app": "^3.0.6",
     "eslint-plugin-flowtype": "^2.50.3",
