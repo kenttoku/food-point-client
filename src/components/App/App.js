@@ -1,7 +1,8 @@
 import React from 'react';
+import Login from '../Login';
 
 const App = () => (
-  <p>Test</p>
+  <Login />
 );
 
 export default App;
